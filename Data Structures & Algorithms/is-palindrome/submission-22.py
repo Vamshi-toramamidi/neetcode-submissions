@@ -1,0 +1,8 @@
+class Solution:
+    import re
+    def isPalindrome(self, s: str) -> bool:
+        s = re.sub(r'[^a-zA-Z0-9]', '', s)
+        if s.lower()== s[::-1].lower():
+            return True
+        else:
+            return False
